@@ -66,7 +66,7 @@ function Services() {
         <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mx-32'>
           {
             listServices.map((item)=>(
-              <div className='flex flex-col justify-center items-start border border-ble p-4 rounded-md hover:scale-105 transition-transform duration-300'>
+              <div className='flex flex-col justify-center items-start border border-ble p-4 rounded-md shadow-xl hover:scale-105 transition-transform duration-300'>
                 <div className='my-2'>{item.icon}</div>
                 <h1 className='text-black font-Cairo text-base font-medium leading-122 my-2'>{item.title}</h1>
                 <h4 className='text-gray-600 font-Cairo text-sm font-normal leading-119'>{item.description}</h4>

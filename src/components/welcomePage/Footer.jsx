@@ -13,7 +13,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className='mt-6 w-full h-full px-32 py-8 bg-gradient-to-b from-blue-700 to-indigo-900 flex '>
+    <div className='mt-6 w-full h-full pl-32 py-8 bg-gradient-to-b from-blue-700 to-indigo-900 flex '>
 
         <div className='w-1/2 h-full'>
             <div className='flex justify-between'>
@@ -115,6 +115,7 @@ function Footer() {
                 <a href="" className='p-2 bg-white rounded-full m-2'><FaWhatsapp color='#000000'/></a>
             </div>
         </div>
+    
     </div>
   )
 }
