@@ -1,6 +1,6 @@
 import React from 'react'
 import FillButton from '../util/FillButton'
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 function Home() {
   return (
@@ -9,7 +9,17 @@ function Home() {
         WebkitClipPath: 'polygon(0 0, 0 98%, 8% 97%, 15% 97%, 22% 97%, 31% 98%, 46% 99%, 62% 100%, 77% 100%, 92% 99%, 100% 97%, 100% 0)',
         clipPath: 'polygon(0 0, 0 98%, 8% 97%, 15% 97%, 22% 97%, 31% 98%, 46% 99%, 62% 100%, 77% 100%, 92% 99%, 100% 97%, 100% 0)'
       }}>
-        <div  className='w-full h-full bg-gradient-to-b from-transparent via-transparent to-ble flex flex-col justify-center items-center'>
+
+
+
+
+        
+       
+          <div  className='w-full h-full bg-gradient-to-b from-transparent via-transparent to-ble flex flex-col justify-center items-center'>
+          
+          <Fade top>
+          <div className='w-full h-full flex flex-col justify-center items-center'>
+
           
           <h3 className='text-center font-Cairo text-3xl text-yel font-normal leading-normal'>Visadil</h3>
           
@@ -24,8 +34,14 @@ function Home() {
             <rect x="0.5" y="0.5" width="31.6389" height="49" rx="15.8194" stroke="white"/>
             <path d="M15.9722 11.1111V18.75" stroke="white" stroke-linecap="round"/>
         </svg>
+
+
         </div>
-  
+
+        </Fade>
+        </div>
+
+       
       </div>
 
   )

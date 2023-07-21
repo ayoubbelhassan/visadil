@@ -43,16 +43,18 @@ function Offers() {
 
 
   return (
-    <div className='flex flex-col justify-center items-center w-full mt-16'>
-        <TitleSection>Our Offers</TitleSection>
-        <h1 class="text-center font-Cairo text-ble text-4xl font-bold leading-105 px-96 my-14">
+    <div className='flex flex-col justify-center items-center w-full mt-16 bg-ble p-7'>
+          <span className='w-max border border-white font-Cairo font-semibold text-white rounded-tr-2xl rounded-br-2xl rounded-bl-2xl px-6 py-2'>
+         Our Offres
+        </span>
+        <h1 class="text-center font-Cairo text-white text-4xl font-bold leading-105 px-96 my-14">
             Your Gateway to a World of Opportunities , Discover Our Immigration Offers.
         </h1>
-        <div className='w-1/2 mt-2 mb-3'> 
+        <div className='w-2/3 mt-2 mb-3'> 
         <Swiper
       
       modules={[ Pagination , A11y]}
-      spaceBetween={10}
+      spaceBetween={50}
       slidesPerView={3}
       pagination={{ clickable: true , }}
       onSwiper={(swiper) => console.log(swiper)}
@@ -62,17 +64,19 @@ function Offers() {
       {
         ListOffers.map((element)=>(
           <SwiperSlide> 
-          <div className='w-full h-80 mb-10 flex justify-center items-center'>
-            <div className='w-full mx-4 h-full  bg-ble border rounded-3xl'>
-              <div className='relative w-full h-2/3 roun'>
-                <div className='absolute w-full h-full bg-gradient-to-b from-transparent via-transparent to-ble z-10 flex flex-col justify-end items-start px-2'>
-                  <h6 className='text-white font-Cairo text-[12px] font-normal'>Offer - {element.number}</h6>
-                  <h1 className='text-yel font-Cairo text-2xl font-bold leading-6 mr-3'>Bachelor in Spain </h1>
-                </div>
-                <img src={Offre1} className='absolute w-full h-full object-cover z-0 rounded-lg'/>
+          <div className='w-80 h-[423px] m-10 flex justify-center items-center rounded-md'>
+            <div className='w-full mx-4 h-full  bg-white border rounded-md'>
+              <div className='w-full h-1/2'>
+                <img src={Offre1} className='w-full h-full object-cover z-0 rounded-md'/>
               </div>
-              <div className='w-full  h-1/3 bg-ble rounded-lg p-2'>
-                <p className='text-white font-Cairo text-[10px] font-medium'>Bachelor’s degree 2022-2023 in Spain is the best idea if like to study in spain medicine business ...</p>
+              <div className='w-full h-1/2 bg-white rounded-lg p-4 flex flex-col justify-between'>
+
+              <h1 class="text-[22px] font-Cairo  font-bold">Your Heading Text</h1>
+                <p className='text-gray-600 font-Cairo text-base font-normal leading-7'>Bachelor’s degree 2022-2023 in Spain is the best idea if like to study in spain medicine business ...</p>
+                <button className='w-max text-white bg-yel text-[16px] border-2 border-yel font-medium font-Cairo py-1 px-3 rounded hover:bg-transparent hover:text-yel ease-in duration-300 shadow-lg'>
+                Read me!
+                </button>
+
               </div>
               
             </div>
@@ -82,7 +86,6 @@ function Offers() {
       }
         </Swiper>
         </div>
-        <FillButton>Get Started Now! </FillButton>
 
 
     </div>

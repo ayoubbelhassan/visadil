@@ -11,7 +11,7 @@ module.exports = {
       },
       backgroundImage:{
         homebg:'url("./assets/homebg.png")',
-        vtt:'url("./assets/vtt1.png")',
+        propage:'url("./assets/bgpro.png")',
       },
       colors: {
         customColor: '#FFD08B',

@@ -6,6 +6,7 @@ import Services from '../components/welcomePage/Services'
 import Offers from '../components/welcomePage/Offers'
 import Contac from '../components/welcomePage/Contac'
 import Footer from '../components/welcomePage/Footer'
+import Progressing from '../components/welcomePage/Progressing'
 
 function welcomePage() {
   return (
@@ -15,6 +16,7 @@ function welcomePage() {
     <About />
     <Services />
     <Offers />
+    <Progressing />
     <Contac />
     <Footer />
     </>
