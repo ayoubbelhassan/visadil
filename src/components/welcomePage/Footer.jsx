@@ -13,12 +13,12 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className='mt-6 w-full h-full pl-32 py-8 bg-gradient-to-b from-blue-700 to-indigo-900 flex '>
+    <div className='mt-6 w-full h-full md:pl-32 md:px-0 px-10 py-8 bg-gradient-to-b from-blue-700 to-indigo-900 flex md:flex-row flex-col-reverse'>
 
-        <div className='w-1/2 h-full'>
-            <div className='flex justify-between'>
+        <div className='md:w-1/2 h-full'>
+            <div className='flex justify-between md:flex-row flex-col'>
 
-                <div>
+                <div className='flex flex-col justify-start items-start'>
                     <h1 className='text-yellow-500 font-Cairo text-2xl font-bold leading-snug mb-4'>Get in touch</h1>
                     <ul className='flex flex-col items-start'>
 
@@ -40,7 +40,7 @@ function Footer() {
 
                 </div>
 
-                <div className='mx-12'>
+                <div className='md:mx-12 md:my-0 my-12'>
                     <h1 className='text-yellow-500 font-Cairo text-2xl font-bold leading-snug mb-4'>Links</h1>
 
                     <ul className='flex flex-col items-start'>
@@ -95,18 +95,17 @@ function Footer() {
                     </ul>
 
                 </div>
-
-
+                
             </div>
-
-            <div className='flex justify-start items-center py-2'>
-                <h1 className='text-[16px] font-extrabold text-yel font-Cairo'>© VISADIL , </h1>
-                <h4 className='text-[16px] font-normal text-white font-Cairo m-1'>Copyright 2021 all rights reserved.</h4>
-            </div>
+            <div className='flex justify-start items-center md:py-2 pt-6'>
+                <h1 className='md:text-[16px] text-[12px] font-extrabold text-yel font-Cairo'>© VISADIL , </h1>
+                <h4 className='md:text-[16px] text-[12px] font-normal text-white font-Cairo m-1'>Copyright 2021 all rights reserved.</h4>
+        </div>
+    
 
         </div> 
 
-        <div className='w-1/2 h-max flex flex-col justify-center items-center p-4'>
+        <div className='md:w-1/2 h-max flex flex-col justify-center items-center p-4'>
             <img src={image} />
             <div className='flex mt-3'>
                 <a href="" className='p-2 bg-white rounded-full m-2'><FaFacebookF color='#000000'/></a>
@@ -115,7 +114,7 @@ function Footer() {
                 <a href="" className='p-2 bg-white rounded-full m-2'><FaWhatsapp color='#000000'/></a>
             </div>
         </div>
-    
+      
     </div>
   )
 }

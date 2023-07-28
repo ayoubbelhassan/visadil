@@ -13,12 +13,12 @@ function welcomePage() {
     <>
     <Navbar />
     <Home />
-    <About />
+   <About />
     <Services />
     <Offers />
-    <Progressing />
-    <Contac />
-    <Footer />
+   <Progressing />
+      <Contac />
+   <Footer />
     </>
   )
 }

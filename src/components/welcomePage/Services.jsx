@@ -8,6 +8,7 @@ import { FaHome } from 'react-icons/fa';
 import { FaRegAddressCard } from 'react-icons/fa';
 import { FaStamp } from 'react-icons/fa';
 import { FaPhoneAlt } from 'react-icons/fa';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -58,21 +59,25 @@ function Services() {
   ]
 
   return (
-    <div className='flex flex-col justify-center items-center w-full'>
+    <div className='flex flex-col justify-center items-center w-full md:my-0 my-8'>
         <TitleSection>Our services </TitleSection>
-        <h1 class="text-center font-Cairo text-ble text-4xl font-bold leading-105 px-96 my-14">
+        <h1 class="text-center font-Cairo text-ble md:text-4xl text-2xl my-8 font-bold leading-105 md:px-96 md:my-14">
           Making Your Immigration Process Smooth and Stress-Free.
         </h1>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mx-32'>
+        <div className='grid grid-cols-1 md:grid-cols-4 md:gap-4 gap-4 md:mx-32 ms-4'>
+     
           {
             listServices.map((item)=>(
+              <Fade bottom>
               <div className='flex flex-col justify-center items-start border border-ble p-4 rounded-md shadow-xl hover:scale-105 transition-transform duration-300'>
                 <div className='my-2'>{item.icon}</div>
                 <h1 className='text-black font-Cairo text-base font-medium leading-122 my-2'>{item.title}</h1>
                 <h4 className='text-gray-600 font-Cairo text-sm font-normal leading-119'>{item.description}</h4>
               </div>
+              </Fade>
             ))
           }
+         
         </div>
 
     </div>

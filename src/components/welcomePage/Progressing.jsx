@@ -21,17 +21,17 @@ const data=[
 
 function Progressing() {
   return (
-    <div className='bg-propage w-full h-[100vh] bg-fixed bg-no-repeat bg-center bg-cover flex flex-col justify-center items-center'>
+    <div className='bg-propage w-full md:py-16 py-4 bg-fixed bg-no-repeat bg-center bg-cover flex flex-col justify-center items-center'>
         <TitleSection>Working process</TitleSection>
 
-        <h1 class="text-center font-Cairo text-ble text-4xl font-bold leading-105 px-96 my-14">
+        <h1 class="text-center font-Cairo text-ble text-4xl font-bold leading-105 md:px-96 my-14">
           Making Your Immigration Process Smooth and Stress-Free.
         </h1>
 
-        <div className='w-full flex justify-between px-32'>
+        <div className='w-full flex md:flex-row flex-col justify-between items-center md:px-32'>
         {
             data.map((item)=>(
-                <div className='relative flex flex-col justify-center items-center bg-white w-72 h-72 rounded-full p-4'>
+                <div className='relative flex flex-col justify-center items-center bg-white w-72 h-72 rounded-full p-4 md:my-0 my-6'>
                     <div className='bg-white shadow-2xl w-20 h-20  absolute right-2 top-2 rounded-full border-2 border-dashed border-ble flex justify-center items-center'>
                         <div className='bg-ble shadow-2xl w-14 h-14 rounded-full flex flex-col justify-center items-center'>
                             <h1 className='text-white text-center font-Cairo text-[25px] font-semibold leading-5'>0{item.id}</h1>
