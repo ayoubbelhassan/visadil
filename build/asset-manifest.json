@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/visadil/static/css/main.f695fa50.css",
+    "main.js": "/visadil/static/js/main.1f8c83a4.js",
+    "static/js/787.2301330c.chunk.js": "/visadil/static/js/787.2301330c.chunk.js",
+    "static/media/homebg.png": "/visadil/static/media/homebg.fca9fc395b66b62a0430.png",
+    "static/media/aboutimg.png": "/visadil/static/media/aboutimg.7e2ef7ecfb5d739d127f.png",
+    "static/media/offre1.png": "/visadil/static/media/offre1.300db96c2c3cb41f66c5.png",
+    "index.html": "/visadil/index.html",
+    "main.f695fa50.css.map": "/visadil/static/css/main.f695fa50.css.map",
+    "main.1f8c83a4.js.map": "/visadil/static/js/main.1f8c83a4.js.map",
+    "787.2301330c.chunk.js.map": "/visadil/static/js/787.2301330c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f695fa50.css",
+    "static/js/main.1f8c83a4.js"
+  ]
+}
